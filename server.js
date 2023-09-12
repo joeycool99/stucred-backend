@@ -113,8 +113,8 @@ app.get('/dashboard', async(req, res) => {
   });
 });
 
-app.get('/dashboard/data', async (req, res) => {
-  
+app.get('/', async (req, res) => {
+  res.status(200).json({message:"welcome to stucred-backend"});
 });
 
 const PORT = process.env.PORT || 8080;
